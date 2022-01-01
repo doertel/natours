@@ -28,3 +28,33 @@ body {
 		margin-bottom: 4rem;
 	}
 }
+.heading-secondary {
+	background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+	display: inline-block;
+	-ms-background-clip: text;
+	-webkit-background-clip: text;
+
+	background-clip: text;
+	font-size: 3.5rem;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: .2rem;
+	color: transparent;
+
+	transition: all .2s;
+	&:hover {
+		transform: skew(2deg, 2deg);
+		text-shadow: .5rem 1rem 2rem rgba($color-black, .25);
+	}
+}
+.heading-tertiary {
+	font-size: 1.6rem;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.paragraph {
+	font-size: 1.6rem;
+	&:not(:last-child) {
+		margin-bottom: 3rem;
+	}
+}
